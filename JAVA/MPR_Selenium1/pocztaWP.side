@@ -1,0 +1,124 @@
+{
+  "id": "53884f1b-9437-464f-8159-2acc8cd51d01",
+  "version": "2.0",
+  "name": "Poczta WP",
+  "url": "https://www.wp.pl",
+  "tests": [{
+    "id": "781c8883-8e95-461c-9680-b3e7532859b5",
+    "name": "nieudane logowanie do poczty",
+    "commands": [{
+      "id": "00960e07-2af4-4a71-bc01-57f30574b6c5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b69347d-9f71-421a-9339-d1b3634d8fed",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1055",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c14142f6-1a85-4383-89ab-7e4c0037e33e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sc-arqs8k-0",
+      "targets": [
+        ["css=.sc-arqs8k-0", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5a42e01-bbb3-48e2-9b58-77c9b1134124",
+      "comment": "",
+      "command": "click",
+      "target": "id=login",
+      "targets": [
+        ["id=login", "id"],
+        ["name=login_username", "name"],
+        ["css=#login", "css:finder"],
+        ["xpath=//input[@id='login']", "xpath:attributes"],
+        ["xpath=//div[@id='stgMain']/div/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "de0b1e4f-6a33-43d2-9445-d5bfa1cca85d",
+      "comment": "",
+      "command": "type",
+      "target": "id=login",
+      "targets": [
+        ["id=login", "id"],
+        ["name=login_username", "name"],
+        ["css=#login", "css:finder"],
+        ["xpath=//input[@id='login']", "xpath:attributes"],
+        ["xpath=//div[@id='stgMain']/div/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "adres@wp.pl"
+    }, {
+      "id": "13c87ce9-f0d3-49f8-9d5d-6644f451328c",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='stgMain']/div/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6bd6ca69-3228-42c5-a945-1cbe4d04dcc5",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='stgMain']/div/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Kaczka123"
+    }, {
+      "id": "06f37b63-255e-4fb0-b097-906c9b0640b7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.styled__SubmitButton-sc-1bs2nwv-2",
+      "targets": [
+        ["css=.styled__SubmitButton-sc-1bs2nwv-2", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='stgMain']/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "adf882aa-a4ed-493b-8a90-676352c1f71a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.styled__ErrorStyled-sc-1bs2nwv-3 > span",
+      "targets": [
+        ["css=.styled__ErrorStyled-sc-1bs2nwv-3 > span", "css:finder"],
+        ["xpath=//div[@id='stgMain']/div/div/div/form/div[3]/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Podany login i/lub hasło są nieprawidłowe.')]", "xpath:innerText"]
+      ],
+      "value": "Podany login i/lub hasło są nieprawidłowe."
+    }]
+  }],
+  "suites": [{
+    "id": "436a0d55-fe70-4107-8bae-10922e33f787",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["781c8883-8e95-461c-9680-b3e7532859b5"]
+  }],
+  "urls": ["https://www.wp.pl/"],
+  "plugins": []
+}

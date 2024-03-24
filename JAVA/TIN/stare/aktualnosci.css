@@ -1,0 +1,28 @@
+body{
+    font-family: Arial;
+    font-size: 13px;
+}
+
+article{
+    width: 95vw;
+}
+
+h2{
+    background: lightgray;
+    width: 95vw;
+    float: left;
+}
+
+h2 time{
+    color:dimgray;
+    float:right;
+}
+
+p{
+    float: left;
+    width: 30%;
+}
+
+img{
+    float: left;
+    margin-right: 1vw;

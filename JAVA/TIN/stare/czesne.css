@@ -1,0 +1,17 @@
+tbody tr th{
+    background: AliceBlue;
+    position: sticky;
+    left: 0;
+}
+thead{
+    background: LightGrey;
+    position: sticky;
+    top: 0;
+}
+thead tr th:first-child{
+    background: AliceBlue;
+    background: AliceBlue;
+    position: sticky;
+    left: 0;
+}
+

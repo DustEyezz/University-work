@@ -1,0 +1,33 @@
+.zamkniety .ikona{
+    position: relative;
+    right: 20px;
+    top: 15px;
+    background-image: url("icons.png");
+    width:15px;
+    height:15px;
+    background-position:top;
+    cursor: pointer;
+}
+
+.lisc .ikona{
+    position: relative;
+    right: 20px;
+    top: 15px;
+    background-image: url("icons.png");
+    width:15px;
+    height:15px;
+    background-position:bottom;
+    cursor: pointer;
+}
+
+.ikona{
+    position: relative;
+    right: 20px;
+    top: 15px;
+    background-image: url("icons.png");
+    width:15px;
+    height:15px;
+    background-position:center;
+    cursor: pointer;
+}
+

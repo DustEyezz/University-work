@@ -1,0 +1,57 @@
+body {
+    background-color: aliceblue;
+    text-decoration-color: darkslateblue;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+ul li {
+    float: left;
+    background-color: gray;
+    border-radius: 10px 10px 0 0;
+    border-top: 2px solid darkslateblue;
+    padding: 20px;
+    width: 450px;
+    height: 50px;
+}
+
+ul li ul li {
+    float: left;
+    background-color: darkgray;
+    border-radius: 10px 10px 0 0;
+    padding: 20px;
+    width: 100px;
+    height: 10px;
+}   
+
+ul li ul {
+    position: center;
+    display: none;
+    
+}
+
+ul li.active ul {
+    display: inline-flex;
+    position: relative;
+    width: 960px;
+    right: 500px;
+}
+
+ul li.active ul li{
+ width: 40%;
+}
+
+.selected {
+    background-color: aliceblue;
+    border-top: 2px solid gray;
+}
+
+.active {
+    background-color: aliceblue;
+}

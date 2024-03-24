@@ -1,0 +1,44 @@
+header {
+    counter-reset: section;
+}
+
+h2::before{
+    counter-increment: section;
+    content: "Rozdział " counter(section) ". ";
+}
+
+article{
+    counter-reset: subsection definition;
+}
+
+h3::before{
+    counter-increment: subsection;
+    content: counter(section) "." counter(subsection) ". "
+}
+
+.definition::before{
+    counter-increment: definition;
+    content: "Definicja " counter(section) "." counter(definition) ". ";
+    font-weight: bold;
+}
+
+.theorem::before{
+    counter-increment: theorem;
+    content: "Twierdzenie " counter(section) "." counter(subsection) ". ";
+    font-weight: bold;
+}
+
+.proof::before{
+    content: "Dowód. ";
+    font-style: italic;
+}
+
+figcaption::before{
+    counter-increment: picture;
+    content: "Rysunek " counter(picture) ". ";
+    font-style: normal;
+}
+
+figcaption{
+    font-style: italic;
+}

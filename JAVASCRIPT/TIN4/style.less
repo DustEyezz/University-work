@@ -1,0 +1,44 @@
+@base-color: #ff9999;
+@left-color: lighten(@base-color, 5%);
+@main-color: lighten(@base-color, 15%);
+
+#container{
+    display: grid;
+    grid-template-areas:
+    "header header header header"
+    " nav   nav nav nav "
+    "left  main main  important"
+    "footer footer footer footer";
+    @media screen{
+        @media(max-width:800px){
+            grid-template:
+            "header header"
+            "nav nav      "
+            "main main    "
+            "left important"
+            "footer footer";
+        }
+    }
+    header{
+        grid-area: header;
+        background-color: @base-color;
+    }
+    nav{
+        grid-area: nav;
+    }
+    #left{
+        grid-area: left;
+        background-color: @left-color;
+    }
+    #main{
+        grid-area: main;
+        background-color: @main-color;
+    }
+    #important{
+        grid-area: important;  
+    }
+    footer{
+        grid-area: footer;
+    }
+        
+}

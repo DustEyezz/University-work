@@ -1,0 +1,189 @@
+{
+  "id": "c8cb33c2-af02-4d8a-a1d1-f97812213dde",
+  "version": "2.0",
+  "name": "Time Calculator",
+  "url": "https://www.miraclesalad.com",
+  "tests": [{
+    "id": "5b79ee22-4c9a-4143-baf1-070c7013c45a",
+    "name": "test1",
+    "commands": [{
+      "id": "9a26f91a-4a53-4fe6-93b3-7896c9d259f6",
+      "comment": "",
+      "command": "open",
+      "target": "/webtools/timesheet.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "05b34609-e900-4438-ac6d-d75657dd6f3d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1055",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2ff6a8cc-b39d-4d74-9ea2-9ad2722a9887",
+      "comment": "",
+      "command": "type",
+      "target": "id=hours1",
+      "targets": [
+        ["id=hours1", "id"],
+        ["name=hours[]", "name"],
+        ["css=#hours1", "css:finder"],
+        ["xpath=//input[@id='hours1']", "xpath:attributes"],
+        ["xpath=//form[@id='group2']/table/tbody/tr/td/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/table/tbody/tr/td/input", "xpath:position"]
+      ],
+      "value": "1:00"
+    }, {
+      "id": "535bb214-9816-4a1f-a411-bdfba451effe",
+      "comment": "",
+      "command": "type",
+      "target": "id=hours2",
+      "targets": [
+        ["id=hours2", "id"],
+        ["css=#hours2", "css:finder"],
+        ["xpath=//input[@id='hours2']", "xpath:attributes"],
+        ["xpath=//form[@id='group2']/table/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/table/tbody/tr[2]/td/input", "xpath:position"]
+      ],
+      "value": "2:00"
+    }, {
+      "id": "216dc068-cc06-4a80-a5ed-049784fa922b",
+      "comment": "",
+      "command": "type",
+      "target": "id=hours3",
+      "targets": [
+        ["id=hours3", "id"],
+        ["css=#hours3", "css:finder"],
+        ["xpath=//input[@id='hours3']", "xpath:attributes"],
+        ["xpath=//form[@id='group2']/table/tbody/tr[3]/td/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/table/tbody/tr[3]/td/input", "xpath:position"]
+      ],
+      "value": "3:00"
+    }, {
+      "id": "0f937420-ad9e-46ef-be37-59ffeb8eda9b",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit-sum-hours",
+      "targets": [
+        ["id=submit-sum-hours", "id"],
+        ["css=#submit-sum-hours", "css:finder"],
+        ["xpath=//button[@id='submit-sum-hours']", "xpath:attributes"],
+        ["xpath=//form[@id='group2']/table/tfoot/tr[2]/td/div/button", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Sum Hours')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6722d23-a431-4d2e-9464-42c73036d26b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=shresult",
+      "targets": [
+        ["id=shresult", "id"],
+        ["css=#shresult", "css:finder"],
+        ["xpath=//td[@id='shresult']", "xpath:attributes"],
+        ["xpath=//form[@id='group2']/table/tfoot/tr/td", "xpath:idRelative"],
+        ["xpath=//div[2]/form/table/tfoot/tr/td", "xpath:position"],
+        ["xpath=//td[contains(.,'6:00 (6.00 hours)')]", "xpath:innerText"]
+      ],
+      "value": "6:00 (6.00 hours)"
+    }]
+  }, {
+    "id": "f7ec1ce7-0940-48ab-b9d9-10a7bc884d1b",
+    "name": "test2",
+    "commands": [{
+      "id": "a5c8f2f3-88b4-46d3-ba28-8d0510138ed1",
+      "comment": "",
+      "command": "open",
+      "target": "/webtools/timesheet.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ca416e81-e93d-431a-b3e7-7d6f61009b4f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1055",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5cc6941f-bebb-4fc7-b494-6d068b45641e",
+      "comment": "",
+      "command": "type",
+      "target": "id=hours1",
+      "targets": [
+        ["id=hours1", "id"],
+        ["name=hours[]", "name"],
+        ["css=#hours1", "css:finder"],
+        ["xpath=//input[@id='hours1']", "xpath:attributes"],
+        ["xpath=//form[@id='group2']/table/tbody/tr/td/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/table/tbody/tr/td/input", "xpath:position"]
+      ],
+      "value": "1:20"
+    }, {
+      "id": "c2697d75-1499-4dd7-99a8-fb9dee315ae2",
+      "comment": "",
+      "command": "type",
+      "target": "id=hours2",
+      "targets": [
+        ["id=hours2", "id"],
+        ["css=#hours2", "css:finder"],
+        ["xpath=//input[@id='hours2']", "xpath:attributes"],
+        ["xpath=//form[@id='group2']/table/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/table/tbody/tr[2]/td/input", "xpath:position"]
+      ],
+      "value": "2:20"
+    }, {
+      "id": "710faacc-9097-4345-b503-2a09485cc972",
+      "comment": "",
+      "command": "type",
+      "target": "id=hours3",
+      "targets": [
+        ["id=hours3", "id"],
+        ["css=#hours3", "css:finder"],
+        ["xpath=//input[@id='hours3']", "xpath:attributes"],
+        ["xpath=//form[@id='group2']/table/tbody/tr[3]/td/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/table/tbody/tr[3]/td/input", "xpath:position"]
+      ],
+      "value": "3:20"
+    }, {
+      "id": "b722d993-3864-47b6-9557-a1fbd56330cf",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit-sum-hours",
+      "targets": [
+        ["id=submit-sum-hours", "id"],
+        ["css=#submit-sum-hours", "css:finder"],
+        ["xpath=//button[@id='submit-sum-hours']", "xpath:attributes"],
+        ["xpath=//form[@id='group2']/table/tfoot/tr[2]/td/div/button", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Sum Hours')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "812d35e4-e1e8-4a5c-8f88-7d12b2094db8",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=shresult",
+      "targets": [
+        ["id=shresult", "id"],
+        ["css=#shresult", "css:finder"],
+        ["xpath=//td[@id='shresult']", "xpath:attributes"],
+        ["xpath=//form[@id='group2']/table/tfoot/tr/td", "xpath:idRelative"],
+        ["xpath=//div[2]/form/table/tfoot/tr/td", "xpath:position"],
+        ["xpath=//td[contains(.,'6:00 (6.00 hours)')]", "xpath:innerText"]
+      ],
+      "value": "7:00 (7.00 hours)"
+    }]
+  }],
+  "suites": [{
+    "id": "3fbc34ac-791c-46da-8e40-f99b15c6af0a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5b79ee22-4c9a-4143-baf1-070c7013c45a"]
+  }],
+  "urls": ["https://www.miraclesalad.com/"],
+  "plugins": []
+}

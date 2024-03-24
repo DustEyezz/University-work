@@ -1,0 +1,74 @@
+#grid-container{
+    align-content: flex-start;
+    display: grid;
+    grid-auto-columns: 1000px;
+}
+
+header{
+    width: 100%;
+    text-align: center;
+    display: flex;
+}
+
+nav{
+    margin: auto;
+    width: 80%;
+    height: 60px;
+    background: red;
+    font-size: 20px;
+    color: white;
+}
+nav ul li{
+    list-style:none ;
+    position: relative;
+}
+nav a{
+    color: white;
+    float: left;
+    margin-right: 20px;
+}
+#baner {
+    max-width:  60%;
+    margin-top: 20px;
+    margin-left: 12%;
+    display: flex;
+}
+#rekrutacja {
+    max-width: 40%;
+    position: absolute;
+    top: 170px;
+    left: 750px;
+}
+
+#rekrutacja > img {
+    border: double;
+    display: inline-block;
+    margin-right: 50%;
+    margin-left: 50%;
+    z-index: -1;
+}
+
+article{
+    float: left;
+    max-width: 350px;
+}
+#wi{
+    max-width: 350px;
+}
+#wsnm {
+    position: relative;
+    max-width: 350px;
+}
+#gallery{
+    text-align: center;
+    width: 100%;
+}
+footer{
+    width: 100%;
+    display: flex;
+    background: red;
+    justify-content: center;
+    height: 30px;
+    padding-top: 15px;
+    margin-top: 30px;
+}

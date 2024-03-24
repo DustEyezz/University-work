@@ -1,0 +1,67 @@
+nav {
+    max-width: 98.5vw;
+    height: 70px;
+    background: deepskyblue;
+    font-size: 20px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    line-height: 20px;
+    float: left;
+    margin: 20px;
+}
+
+div {
+    float: right;
+}
+
+#search {
+    float: right;
+    padding-top: 20px;
+    padding-right: 5vw;
+}
+
+@media only screen and (max-width: 800px){
+    nav {
+        height: 120px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #search {
+        padding-top: 70px;
+        position: absolute;
+        left: 20px;
+    }
+    div {
+        float: none;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #search {
+        position: absolute;
+        text-align: center;
+        padding-top: 30px;
+        margin-bottom: 30px;
+        float: left;
+        width: 100%;
+    }
+    nav {
+        height: 300px;
+        display: block;
+        justify-content: center;
+    }
+    a {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        top: 60px;
+    }
+}
+
+input{
+    height: 20px;
+}
